@@ -8,7 +8,6 @@ It uses OptionParser, a class for command-line option analysis.
 Log Parser application includes 3 files.
 1. Log.rb
 2. OptionsValidator.rb
-3. webserver.log
 
 Test Files:
 1. log_test.rb
@@ -31,7 +30,7 @@ Log:
 
   Log is a class, and it extends OptionsValidator.
 
-  It has a series of method:
+  It has following methods:
 
   parse:         Parse the user given file and throw error if any
   
@@ -44,3 +43,12 @@ Log:
   total_results: Collects the total visits for the given page.
   
   print_info:    Prints the collected data in console for the user.
+  
+Usage: 
+  
+  ruby log.rb -f server.log or ./log.rb -f server.log
+  
+Test cases:
+  
+  ruby log_test.rb
+  ruby options_validator_test.rb
